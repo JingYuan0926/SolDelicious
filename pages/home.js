@@ -90,7 +90,7 @@ export default function Home() {
         <div className="py-12 text-center">
           <WordPullUp
             className="text-6xl font-extrabold text-white mb-8"
-            words="JustSOL"
+            words="SolDelicious"
             delay={0}
           />
           <WordPullUp
