@@ -97,7 +97,7 @@ const UserOnboardingFlow = ({ isOpen, onClose, onComplete }) => {
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
       <div className="bg-white p-8 rounded-lg max-w-3xl w-full">
         <p className="text-2xl font-bold mb-6 text-black">
-          Let's set your food preferences to customize your experience.
+          Let&apos;s set your food preferences to customize your experience.
         </p>
 
         {error && <p className="text-red-500 mb-4">{error}</p>}

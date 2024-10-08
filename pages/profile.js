@@ -120,7 +120,7 @@ const UserActivityTimeline = () => {
                         <p className="font-semibold">Submitted Review:</p>
                         <p>Rating: {activity.rating}</p>
                         <p>Confidence Score: {activity.confidenceScore}%</p>
-                        <p>Comment: "{activity.comment}"</p>
+                        <p>Comment: &ldquo;{activity.comment}&rdquo;</p>
                       </div>
                     )}
                     <p className="text-sm text-gray-500 mt-2">
