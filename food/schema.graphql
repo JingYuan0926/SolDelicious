@@ -1,0 +1,19 @@
+type PreferencesUpdated @entity(immutable: true) {
+  id: Bytes!
+  user: Bytes! # address
+  preferences: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ReviewSubmitted @entity(immutable: true) {
+  id: Bytes!
+  user: Bytes! # address
+  rating: Int! # uint8
+  comment: String! # string
+  confidenceScore: Int! # uint8
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}

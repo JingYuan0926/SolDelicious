@@ -1,0 +1,13 @@
+type Store = 
+ record {
+   imageUrl: text;
+   name: text;
+   rating: float64;
+ };
+service : {
+  createStore: (text, text) -> ();
+  deleteStore: (text) -> (bool);
+  getAllStores: () -> (vec Store) query;
+  getStore: (text) -> (opt Store) query;
+  updateStore: (text, float64) -> ();
+}

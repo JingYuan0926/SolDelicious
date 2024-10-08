@@ -1,0 +1,29 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: Contract
+    network: scroll-sepolia
+    source:
+      address: "0xE805a19Af341Eb244de25fb371f4fa826980D98f"
+      abi: Contract
+      startBlock: 6882776
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - PreferencesUpdated
+        - ReviewSubmitted
+      abis:
+        - name: Contract
+          file: ./abis/Contract.json
+      eventHandlers:
+        - event: PreferencesUpdated(indexed address,string)
+          handler: handlePreferencesUpdated
+        - event: ReviewSubmitted(indexed address,uint8,string,uint8)
+          handler: handleReviewSubmitted
+      file: ./src/contract.ts
