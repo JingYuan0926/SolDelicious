@@ -80,7 +80,7 @@ export default function Home() {
       <Particles className="absolute inset-0" quantity={100} ease={80} color="#ffffff" />
 
       <Head>
-        <title>JustSOL - Blockchain Food Rating</title>
+        <title>SolDelicious - Blockchain Food Rating</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
